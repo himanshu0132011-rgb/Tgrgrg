@@ -1,0 +1,45 @@
+BYTE is a small experiment in building an artificial intelligence system from scratch.
+A computer program follows instructions written by a programmer.
+A tokenizer turns text into smaller pieces called tokens.
+A vocabulary is a list of tokens that the tokenizer knows.
+Each token receives a number called a token ID.
+A language model learns patterns from examples of text.
+The model predicts which token is likely to come next.
+Training changes the model weights so that useful predictions become more likely.
+The weights begin as small random numbers before training starts.
+A neural network uses layers of numbers and mathematical operations.
+An embedding turns a token ID into a vector of numbers.
+A context window is the recent sequence of tokens given to the model.
+The model uses the context to predict the next token.
+A loss value measures how wrong a prediction was during training.
+The optimizer updates weights to reduce the loss value.
+A smaller training loss means the model fits its training examples better.
+A small training loss does not prove that the model understands language.
+A model can memorize examples without learning general reasoning.
+Good experiments measure what a model can and cannot do.
+BYTE runs on the local computer and does not need an internet connection after setup.
+The source code explains how the tokenizer and neural network work.
+The training data is stored in a plain text file.
+A person can add new examples to the training file.
+After new examples are added the model must be trained again.
+A saved model contains learned numerical weights.
+A saved tokenizer contains the vocabulary and token IDs.
+The model and tokenizer must use the same vocabulary.
+Python runs the program and NumPy performs numerical calculations.
+NumPy is a mathematics library and does not provide a pretrained language model here.
+This project does not call a cloud service or use a paid application programming interface.
+This project does not download an existing model.
+The first version is intentionally small so that its parts can be inspected.
+A tiny model will produce mistakes and strange sentences.
+It may repeat phrases from the examples that it has seen.
+It cannot reliably answer factual questions or solve difficult problems.
+The goal is to learn how a language model is assembled.
+The goal is not to pretend that a tiny experiment is equivalent to a commercial assistant.
+A reliable system needs testing, error handling, clear limits, and careful engineering.
+The next version can use a larger dataset and a better model architecture.
+A transformer is a more advanced neural network architecture used by many modern language models.
+This first version is a small feed forward network, not a transformer.
+Building a tokenizer is different from building the neural network that learns language patterns.
+Token IDs are labels for pieces of text and are not intelligence by themselves.
+A model needs training examples and adjustable weights to learn statistical patterns.
+BYTE is built to make these ideas visible and testable.
